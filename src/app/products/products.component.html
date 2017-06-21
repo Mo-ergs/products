@@ -2,8 +2,7 @@
   <div class="row">
     <div class="col-lg-6" id="search">
       <h1>Products</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet metus vel lectus semper, eu vehicula diam eleifend.
-        Aliquam quis mauris nulla. . Nulla facilisi. Nullam viverra lacinia arcu sagittis tincidunt.
+      <p>Type in the name of the product and the product description here and click "Add Product" to add product to your list. To remove a product, simply click the remove product sign on the product you wish to remove from the results list.
       </p>
      <form #form="ngForm" (ngSubmit)="addProduct(form.value)">
         <input type="text" placeholder="Product name" name="title" [(ngModel)]="title">
@@ -15,7 +14,7 @@
       <p id="results-label">{{ products.length }} Results</p>
       <ul id="products-list">
         <li *ngFor="let product of products; let i = index">{{ product.title }}
-          <img src="assests/gear.png" (click)="removeProduct(i)">
+          <img src="../assets/delete.svg" (click)="removeProduct(i)">
           <p>{{ product.description }}</p>
         </li>
       </ul>
