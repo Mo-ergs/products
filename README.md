@@ -1,3 +1,5 @@
+An angular project that allows a user to add products to a list and to remove them.
+
 # Products
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
