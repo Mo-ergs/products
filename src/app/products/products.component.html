@@ -13,7 +13,7 @@
     <div class="col-lg-6" id="search">
       <p id="results-label">{{ products.length }} Results</p>
       <ul id="products-list">
-        <li *ngFor="let product of products; let i = index">{{ product.title }}
+        <li [@productsAnim]="state" *ngFor="let product of products; let i = index">{{ product.title }}
           <img src="../assets/delete.svg" (click)="removeProduct(i)">
           <p>{{ product.description }}</p>
         </li>
